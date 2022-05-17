@@ -1,14 +1,10 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: "2022-05-16T13:26:19Z"
-  generation: 1
   labels:
     app: redis
   name: redis
   namespace: instavote
-  resourceVersion: "7663"
-  uid: bcb77a3b-66c5-4ada-b8db-1aa3b602ad28
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
@@ -39,4 +35,3 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-status: {}
